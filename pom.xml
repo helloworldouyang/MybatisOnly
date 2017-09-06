@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com</groupId>
+  <artifactId>MybatisOnly</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>MybatisOnly</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    
+     <!-- mybatis版本号 -->  
+        <mybatis.version>3.2.6</mybatis.version> 
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
+    
+     <!-- mybatis核心包 -->  
+        <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis</artifactId>  
+            <version>${mybatis.version}</version>  
+        </dependency> 
+    
+     <!-- 导入Mysql数据库链接jar包 -->  
+        <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+            <version>5.1.30</version>  
+        </dependency> 
+        
+        
+        
+        <dependency>  
+    <groupId>org.bgee.log4jdbc-log4j2</groupId>  
+    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>  
+    <version>1.16</version>  
+</dependency>  
+<dependency>  
+    <groupId>org.slf4j</groupId>  
+    <artifactId>slf4j-api</artifactId>  
+    <version>1.7.13</version>  
+</dependency>  
+<dependency>  
+    <groupId>org.slf4j</groupId>  
+    <artifactId>slf4j-log4j12</artifactId>  
+    <version>1.7.13</version>  
+</dependency> 
+        
+    
+  </dependencies>
+  
+  
+  
+</project>
